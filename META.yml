@@ -1,12 +1,27 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Tie-File-AsHash
-version:      0.09
-version_from: lib/Tie/File/AsHash.pm
-installdirs:  site
+---
+abstract: 'access lines of a file as a hash splitting at separator'
+author:
+  - 'Chris Angell <chris@chrisangell.com>'
+  - 'Jens Rehsack <rehsack@cpan.org>'
+build_requires:
+  Test::More: 0.9
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.82, CPAN::Meta::Converter version 2.132830'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Tie-File-AsHash
+no_index:
+  directory:
+    - t
+    - inc
 requires:
-    Tie::File:                     
-    Tie::Array::AsHash:                     
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+  Tie::Array::AsHash: 0.200
+  Tie::File: 0
+  perl: v5.8.1
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.200
